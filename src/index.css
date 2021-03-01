@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background:url(C:\Users\kakto\Desktop\react\my-app\src\WEBSITE_BG.jpg);
+}
+
+.home{
+  margin-left: 1em;
+}
+
+.Header{
+  margin: 0;
+  width: 100%;
+  height: 7em;
+  opacity: 85%;
+}
+
+.Wraper {
+  width: 100%;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 5em;
+}
+
+.navel{
+  width: 10%;
+  height: 3em;
+  
+}
+
+.Discord .UnbanAppeal{
+  width: fit-content;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1{
+  margin: auto;
+}
+
+.Wraper > a:hover{
+  width: 12%;
+  height: 4em;
+  box-shadow: 0 1em 1em 0 rgba(0, 0, 0, 0.7);
+}
+
+.Discord:hover{
+  width: 12%;
+  height: 4em;
+  box-shadow: 0 1em 1em 0 rgba(0, 0, 0, 0.7);
+}
+
+.navel{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: #d3eaee;
+  fill: #d3eaee;
+  transition: 1s;
+}
+
+.navel>a{
+  color: #000614;
+}
+
+.navel:hover{
+  cursor: pointer;
+  color: #0F42B0;
+  background-color: #d3eaee;;
+  fill: #0F42B0;
+}
+
+.navel >h1{
+  text-shadow: #000614 0.5em 0 1em;
+}
+
+.navel:hover >h1{
+  text-shadow: #000614 0px 0 0px;
+}
+
+.navel > div >svg{
+  box-shadow: #000614 0.5em 0 1em;
+}
+
+.navel:hover > div >svg{
+  box-shadow: 0px 0 0px;
+}
+
+.navel:hover > a{
+  color: #d3eaee; 
+}
+
+.Servers{
+  border-radius: 0.5em;
+  margin: 0.5em;
+  padding: 1em;
+  color: #d3eaee;
+}
+
+.ServerList{
+  opacity: 90%;
+  border-radius: 0.5em;
+  margin: 0.5em;
+  padding: 1em;
+  background-color: #0F42B0;
+  display: flex;
+  color:  #d3eaee;
+}
+
+.ServerList >h2> a{
+  color: #d3eaee;
+  text-shadow: #000614 0px 0 0px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
