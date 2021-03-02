@@ -2,15 +2,11 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const Gamedig = require('gamedig');
-
+const db_info = require('../db_info.json')
 // Starting our app.
 const app = express();
 
-const connection = mysql.createPool({
-//there should have been some valuable info here
-//...
-//but there is none
-});
+const connection = mysql.createPool(db_info);
 // Creating a GET route that returns data from the 'users' table.
 
 app.get('/ljtop', function (req, res, next) {

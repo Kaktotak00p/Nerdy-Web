@@ -3,62 +3,92 @@ import { BrowserRouter, Link, Route, Switch, withRouter } from 'react-router-dom
 import { useState, useEffect } from 'react';
 
 let LJ = () =>{
-    let [LJData, setLJData] = useState({  "":"" // dont forget to edit this 
+    let [LJData, setLJData] = useState({  
+        loading:"Loading",
+        players:{}
     });
     useEffect( () => {
         fetch("http://localhost:3001/ljtop").then(res => res.json()).then(dt => setLJData({ dt // and this
         }))
     }
     )
+    return(
+        <h1>{LJData.loading}</h1>
+    )
 }
 
 let Bhop = () =>{
-    let [BhopData, setBhopData] = useState({  "":"" // dont forget to edit this
+    let [BhopData, setBhopData] = useState({
+        loading:"Loading",
+        players:{}
     });
     useEffect( () => {
         fetch("http://localhost:3001/bhoptop").then(res => res.json()).then(dt => setBhopData({ dt // and this
         }))
     }
     )
+    return(
+        <h1>{BhopData.loading}</h1>
+    )
 }
 
 let BlockLJ = () =>{
-    let [BLJData, setBLJData] = useState({  "":"" // dont forget to edit this
+    let [BLJData, setBLJData] = useState({
+        loading:"Loading",
+        players:{}
     });
     useEffect( () => {
         fetch("http://localhost:3001/ljblocktop").then(res => res.json()).then(dt => setBLJData({ dt // and this
         }))
     }
     )
+    return(
+        <h1>{BLJData.loading}</h1>
+    )
 }
 
 let DropBhop = () =>{
-    let [DBhopData, setDBhopData] = useState({  "":"" // dont forget to edit this
+    let [DBhopData, setDBhopData] = useState({
+        loading:"Loading",
+        players:{}
     });
     useEffect( () => {
         fetch("http://localhost:3001/dropbhoptop").then(res => res.json()).then(dt => setDBhopData({ dt // and this
         }))
     }
     )
+    return(
+        <h1>{DBhopData.loading}</h1>
+    )
 }
 
 let MBhop = () =>{
-    let [MBhopData, setMBhopData] = useState({ "":"" // dont forget to edit this
+    let [MBhopData, setMBhopData] = useState({
+        loading:"Loading",
+        players:{}
     });
     useEffect( () => {
         fetch("http://localhost:3001/multibhoptop").then(res => res.json()).then(dt => setMBhopData({ dt // and this
         }))
     }
     )
+    return(
+        <h1>{MBhopData.loading}</h1>
+    )
 }
 
 let WJ = () =>{
-    let [WJData, setWJData] = useState({  "":"" // dont forget to edit this
+    let [WJData, setWJData] = useState({
+        loading:"Loading",
+        players:{}
     });
     useEffect( () => {
         fetch("http://localhost:3001/wjtop").then(res => res.json()).then(dt => setWJData({ dt // and this
         }))
     }
+    )
+    return(
+        <h1>{WJData.loading}</h1>
     )
 }
 
