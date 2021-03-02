@@ -13,50 +13,50 @@ let LJ = () =>{
 }
 
 let Bhop = () =>{
-    let [LJData, setLJData] = useState({  "":"" // dont forget to edit this
+    let [BhopData, setBhopData] = useState({  "":"" // dont forget to edit this
     });
     useEffect( () => {
-        fetch("http://localhost:3001/bhoptop").then(res => res.json()).then(dt => setLJData({ dt // and this
+        fetch("http://localhost:3001/bhoptop").then(res => res.json()).then(dt => setBhopData({ dt // and this
         }))
     }
     )
 }
 
 let BlockLJ = () =>{
-    let [LJData, setLJData] = useState({  "":"" // dont forget to edit this
+    let [BLJData, setBLJData] = useState({  "":"" // dont forget to edit this
     });
     useEffect( () => {
-        fetch("http://localhost:3001/ljblocktop").then(res => res.json()).then(dt => setLJData({ dt // and this
+        fetch("http://localhost:3001/ljblocktop").then(res => res.json()).then(dt => setBLJData({ dt // and this
         }))
     }
     )
 }
 
 let DropBhop = () =>{
-    let [LJData, setLJData] = useState({  "":"" // dont forget to edit this
+    let [DBhopData, setDBhopData] = useState({  "":"" // dont forget to edit this
     });
     useEffect( () => {
-        fetch("http://localhost:3001/dropbhoptop").then(res => res.json()).then(dt => setLJData({ dt // and this
+        fetch("http://localhost:3001/dropbhoptop").then(res => res.json()).then(dt => setDBhopData({ dt // and this
         }))
     }
     )
 }
 
-let LJ = () =>{
-    let [LJData, setLJData] = useState({ "":"" // dont forget to edit this
+let MBhop = () =>{
+    let [MBhopData, setMBhopData] = useState({ "":"" // dont forget to edit this
     });
     useEffect( () => {
-        fetch("http://localhost:3001/multibhoptop").then(res => res.json()).then(dt => setLJData({ dt // and this
+        fetch("http://localhost:3001/multibhoptop").then(res => res.json()).then(dt => setMBhopData({ dt // and this
         }))
     }
     )
 }
 
-let Bhop = () =>{
-    let [LJData, setLJData] = useState({  "":"" // dont forget to edit this
+let WJ = () =>{
+    let [WJData, setWJData] = useState({  "":"" // dont forget to edit this
     });
     useEffect( () => {
-        fetch("http://localhost:3001/wjtop").then(res => res.json()).then(dt => setLJData({ dt // and this
+        fetch("http://localhost:3001/wjtop").then(res => res.json()).then(dt => setWJData({ dt // and this
         }))
     }
     )
@@ -74,11 +74,11 @@ export default function Home(){
                 <Link to="/Leaderboard/dbhop" className="navel" title="Demos"><h1>DBhop</h1></Link>
             </div>
             <Route exact path="/Leaderboard/lj"><LJ /></Route>
-            <Route path="/Leaderboard/bhop"></Route>
-            <Route path="/Leaderboard/blocklj"></Route>
-            <Route path="/Leaderboard/mbhop"></Route>
-            <Route path="/Leaderboard/dbhop"></Route>
-            <Route path="/Leaderboard/wj"></Route>
+            <Route path="/Leaderboard/bhop"><Bhop /></Route>
+            <Route path="/Leaderboard/blocklj"><BlockLJ /></Route>
+            <Route path="/Leaderboard/mbhop"><MBhop /></Route>
+            <Route path="/Leaderboard/dbhop"><DropBhop /></Route>
+            <Route path="/Leaderboard/wj"><WJ /></Route>
         </>
     )
 
