@@ -24,6 +24,6 @@ yarn-error.log*
 
 node_modules
 
-/   .vscode
+/.vscode
 
 db_info.json
