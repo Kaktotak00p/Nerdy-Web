@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const Gamedig = require('gamedig');
 const db_info = require('../db_info.json')
