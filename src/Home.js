@@ -12,8 +12,9 @@ let LJ = () =>{
         }))
     }
     )
-    return(
+    return(<div className="Jumptop">
         <h1>{LJData.loading}</h1>
+    </div>
     )
 }
 
@@ -27,8 +28,9 @@ let Bhop = () =>{
         }))
     }
     )
-    return(
+    return(<div className="Jumptop">
         <h1>{BhopData.loading}</h1>
+    </div>
     )
 }
 
@@ -42,8 +44,9 @@ let BlockLJ = () =>{
         }))
     }
     )
-    return(
+    return(<div className="Jumptop">
         <h1>{BLJData.loading}</h1>
+    </div>
     )
 }
 
@@ -57,8 +60,9 @@ let DropBhop = () =>{
         }))
     }
     )
-    return(
+    return(<div className="Jumptop">
         <h1>{DBhopData.loading}</h1>
+    </div>
     )
 }
 
@@ -72,8 +76,9 @@ let MBhop = () =>{
         }))
     }
     )
-    return(
+    return(<div className="Jumptop">
         <h1>{MBhopData.loading}</h1>
+    </div>
     )
 }
 
@@ -87,8 +92,9 @@ let WJ = () =>{
         }))
     }
     )
-    return(
+    return(<div className="Jumptop">
         <h1>{WJData.loading}</h1>
+    </div>
     )
 }
 

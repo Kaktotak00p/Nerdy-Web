@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background:url(C:\Users\kakto\Desktop\react\my-app\src\WEBSITE_BG.jpg);
+  background:url(./WEBSITE_BG.jpg);
 }
 
 .home{
@@ -29,7 +29,7 @@ body {
 }
 
 .navel{
-  width: 10%;
+  width: 13%;
   height: 3em;
   
 }
@@ -47,13 +47,13 @@ h1{
 }
 
 .Wraper > a:hover{
-  width: 12%;
+  width: 15%;
   height: 4em;
   box-shadow: 0 1em 1em 0 rgba(0, 0, 0, 0.7);
 }
 
 .Discord:hover{
-  width: 12%;
+  width: 15%;
   height: 4em;
   box-shadow: 0 1em 1em 0 rgba(0, 0, 0, 0.7);
 }
