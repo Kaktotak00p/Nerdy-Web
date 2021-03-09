@@ -9,6 +9,8 @@ const connection = mysql.createPool(db_info);
 // Creating a GET route that returns data from the 'users' table.
 
 app.get('/ljtop', function (req, res, next) {
+  console.log("lj requested")
+  console.log(req.ip)
     // Connecting to the database.
     connection.getConnection(function (err, connection) {
 
@@ -27,6 +29,8 @@ app.get('/ljtop', function (req, res, next) {
 
 app.get('/bhoptop', function (req, res, next) {
     // Connecting to the database.
+    console.log("bhop requested")
+    console.log(req.ip)
     connection.getConnection(function (err, connection) {
 
     // Executing the MySQL query (select all data from the 'users' table).
@@ -44,6 +48,8 @@ app.get('/bhoptop', function (req, res, next) {
 
 app.get('/dropbhoptop', function (req, res, next) {
     // Connecting to the database.
+    console.log("DBhop requested")
+    console.log(req.ip)
     connection.getConnection(function (err, connection) {
 
     // Executing the MySQL query (select all data from the 'users' table).
@@ -61,6 +67,8 @@ app.get('/dropbhoptop', function (req, res, next) {
 
 app.get('/ljblocktop', function (req, res, next) {
     // Connecting to the database.
+    console.log("LJB requested")
+    console.log(req.ip)
     connection.getConnection(function (err, connection) {
 
     // Executing the MySQL query (select all data from the 'users' table).
@@ -78,6 +86,8 @@ app.get('/ljblocktop', function (req, res, next) {
 
 app.get('/multibhoptop', function (req, res, next) {
     // Connecting to the database.
+    console.log("MBhop requested")
+    console.log(req.ip)
     connection.getConnection(function (err, connection) {
 
     // Executing the MySQL query (select all data from the 'users' table).
@@ -95,6 +105,8 @@ app.get('/multibhoptop', function (req, res, next) {
 
 app.get('/wjtop', function (req, res, next) {
     // Connecting to the database.
+    console.log("Wj requested")
+    console.log(req.ip)
     connection.getConnection(function (err, connection) {
 
     // Executing the MySQL query (select all data from the 'users' table).
@@ -111,6 +123,8 @@ app.get('/wjtop', function (req, res, next) {
 });
 
 app.get('/ServerSts', function (req, res, next) {
+    console.log("SSts requested")
+    console.log(req.ip)
       Gamedig.query({
         type: 'csgo',
         host: '91.152.121.222',

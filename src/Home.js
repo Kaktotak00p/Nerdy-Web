@@ -8,12 +8,20 @@ let LJ = () =>{
         players:{}
     });
     useEffect( () => {
-        fetch("http://localhost:3001/ljtop").then(res => res.json()).then(dt => setLJData({ dt // and this
-        }))
+        fetch("http://localhost:3001/ljtop").then(res => res.json()).then(dt => setLJData({
+            loading:"",
+            players:dt.map(data => 
+                <>
+                <h1 key={data}>{data.name}</h1>
+                </>)}))
     }
     )
     return(<div className="Jumptop">
-        <h1>{LJData.loading}</h1>
+        <div>
+            <h1>
+                {LJData.loading}
+            </h1>
+        </div>
     </div>
     )
 }
@@ -24,12 +32,11 @@ let Bhop = () =>{
         players:{}
     });
     useEffect( () => {
-        fetch("http://localhost:3001/bhoptop").then(res => res.json()).then(dt => setBhopData({ dt // and this
-        }))
+        fetch("http://localhost:3001/bhoptop").then(res => res.json()).then(dt => setBhopData(dt))
     }
     )
     return(<div className="Jumptop">
-        <h1>{BhopData.loading}</h1>
+        {BhopData.loading}
     </div>
     )
 }
@@ -40,12 +47,11 @@ let BlockLJ = () =>{
         players:{}
     });
     useEffect( () => {
-        fetch("http://localhost:3001/ljblocktop").then(res => res.json()).then(dt => setBLJData({ dt // and this
-        }))
+        fetch("http://localhost:3001/ljblocktop").then(res => res.json()).then(dt => setBLJData(dt))
     }
     )
     return(<div className="Jumptop">
-        <h1>{BLJData.loading}</h1>
+        {BLJData.loading}
     </div>
     )
 }
@@ -56,12 +62,11 @@ let DropBhop = () =>{
         players:{}
     });
     useEffect( () => {
-        fetch("http://localhost:3001/dropbhoptop").then(res => res.json()).then(dt => setDBhopData({ dt // and this
-        }))
+        fetch("http://localhost:3001/dropbhoptop").then(res => res.json()).then(dt => setDBhopData(dt))
     }
     )
     return(<div className="Jumptop">
-        <h1>{DBhopData.loading}</h1>
+        {DBhopData.loading}
     </div>
     )
 }
@@ -72,12 +77,11 @@ let MBhop = () =>{
         players:{}
     });
     useEffect( () => {
-        fetch("http://localhost:3001/multibhoptop").then(res => res.json()).then(dt => setMBhopData({ dt // and this
-        }))
+        fetch("http://localhost:3001/multibhoptop").then(res => res.json()).then(dt => setMBhopData(dt))
     }
     )
     return(<div className="Jumptop">
-        <h1>{MBhopData.loading}</h1>
+        {MBhopData.loading}
     </div>
     )
 }
@@ -88,12 +92,11 @@ let WJ = () =>{
         players:{}
     });
     useEffect( () => {
-        fetch("http://localhost:3001/wjtop").then(res => res.json()).then(dt => setWJData({ dt // and this
-        }))
+        fetch("http://localhost:3001/wjtop").then(res => res.json()).then(dt => setWJData(dt))
     }
     )
     return(<div className="Jumptop">
-        <h1>{WJData.loading}</h1>
+        {WJData.loading}
     </div>
     )
 }

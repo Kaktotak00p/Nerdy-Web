@@ -21,7 +21,7 @@ export default function MainContent(){
         <>
             <div className = "Header">
                 <div className = "Wraper">
-                    <Link to="/Leaderboard" className="navel" title="Home page"><h1>Jump Stats</h1></Link>   
+                    <Link to="/Leaderboard/lj" className="navel" title="Home page"><h1>Jump Stats</h1></Link>   
                     <Link to="/Servers" className="navel" title="Servers"><h1>Servers</h1></Link>
                     <Link to="/Demos" className="navel" title="Demos"><h1>Demos</h1></Link>
                     <Link to="/UnbanAppeal" className="navel" title="Unban Appeal">

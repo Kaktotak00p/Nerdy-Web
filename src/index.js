@@ -10,7 +10,7 @@ ReactDOM.render(
   <BrowserRouter>
     <MainContent />
   </BrowserRouter>,
-  document.getElementById('navbar')
+  document.getElementById('main')
 );
 
 
