@@ -122,6 +122,16 @@ h1{
   text-shadow: #000614 0px 0 0px;
 }
 
+.Jumptop{
+  opacity: 90%;
+  border-radius: 0.5em;
+  margin: 0.5em;
+  padding: 1em;
+  background-color: #0F42B0;
+  display: flex;
+  color:  #d3eaee; 
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
